@@ -1,0 +1,15 @@
+- tenant:
+    name: zuul-tenant
+    source:
+      gerrit:
+        config-projects:
+          - zuul-config
+        untrusted-projects:
+          - zuul-project1
+          - zuul-project2
+      opendev.org:
+        untrusted-projects:
+          - zuul/zuul-jobs:
+              include:
+                - job
+
